@@ -21,7 +21,7 @@ public class FilterTest {
         ChromeDriver driver = new ChromeDriver();
         driver.get("https://onliner.by");
         driver.findElement(By.xpath("//span[text()='Фены']")).click();
-        ((JavascriptExecutor) driver).executeScript("window.scrollBy(0, 250)");
+        ((JavascriptExecutor) driver).executeScript("window.scrollBy(0, 500)");
         driver.findElement(By.xpath("//input[@value='philips']/following-sibling::span")).click();
         assertTrue(driver.findElement(By.xpath("//input[@value='philips']")).isSelected());
         driver.quit();
@@ -39,7 +39,7 @@ public class FilterTest {
         ChromeDriver driver = new ChromeDriver();
         driver.get("https://onliner.by");
         driver.findElement(By.xpath("//span[text()='Фены']")).click();
-        ((JavascriptExecutor) driver).executeScript("window.scrollBy(0, 250)");
+        ((JavascriptExecutor) driver).executeScript("window.scrollBy(0, 500)");
         driver.findElementByXPath("//input[@value='" + manufacturers.get(0) + "']/following-sibling::span").click();
         driver.findElementByXPath("//input[@value='" + manufacturers.get(1) + "']/following-sibling::span").click();
         driver.findElementByXPath("//input[@value='" + manufacturers.get(2) + "']/following-sibling::span").click();
@@ -58,7 +58,7 @@ public class FilterTest {
         ChromeDriver driver = new ChromeDriver();
         driver.get("https://onliner.by");
         driver.findElement(By.xpath("//span[text()='Фены']")).click();
-        ((JavascriptExecutor) driver).executeScript("window.scrollBy(0, 250)");
+        ((JavascriptExecutor) driver).executeScript("window.scrollBy(0, 500)");
         driver.findElement(By.xpath("//input[@value='philips']/following-sibling::span")).click();
         try {
             Thread.sleep(5000);
